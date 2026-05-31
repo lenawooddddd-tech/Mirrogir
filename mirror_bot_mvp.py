@@ -54,7 +54,7 @@ async def manage_memory(uid, role, content):
 async def start(event):
     await event.reply("🧠 认知沙盘已部署。")
 
-@bot.on(events.NewMessage(func=lambda e: not e.text.startswith('/')))
+@bot.on(events.NewMessage(func=lambda e: e.text and not e.text.startswith('/')))
 async def handle(event):
     uid, text = event.sender_id, event.raw_text
     msg = await event.reply("⏳ `推理中...`")
