@@ -60,7 +60,7 @@ async def handle(event):
     msg = await event.reply("⏳ `推理中...`")
     try:
         resp = await llm.chat.completions.create(
-            model="llama3-70b-8192",
+            model="llama-3.3-70b-versatile",
             messages=[{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": text}],
             response_format={"type": "json_object"},
             temperature=0.4
