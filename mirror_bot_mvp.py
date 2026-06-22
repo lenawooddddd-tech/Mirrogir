@@ -8,7 +8,7 @@ from flask import Flask
 # 配置读取：使用环境变量，仅在本地开发环境下使用默认值以防报错
 API_ID = int(os.environ.get("API_ID", 36675093))
 API_HASH = os.environ.get("API_HASH", "06eb9ea66dba284800d6051af13971e2")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8611932078:AAGxyvuWAjNcJ0U4rQujqhwGKvgerCe0ZDQ")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8611932078:AAHm3aIz6uYtGdYRC1Mv2JpxhvQT7i_C92w")
 REQUIRED_CHANNEL = os.environ.get("REQUIRED_CHANNEL", "@Mirrogir")
 DB_PATH = "mirror_data.db"
 
